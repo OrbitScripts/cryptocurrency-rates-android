@@ -1,0 +1,25 @@
+ext.deps = [:]
+def build_versions = [:]
+build_versions.compile_sdk = 30
+build_versions.min_sdk = 21
+build_versions.target_sdk = 30
+ext.build_versions = build_versions
+
+def versions = [:]
+versions.androidx_appcomapt = '1.3.0'
+versions.material = '1.3.0'
+versions.hilt = '2.35.1'
+versions.leakcanary = '2.7'
+versions.paging = '3.0.0'
+versions.retrofit = '2.9.0'
+versions.okhttp = '4.9.1'
+versions.glide = '4.12.0'
+versions.androidsvg = '1.4'
+versions.shimmer = '0.5.0'
+versions.mpandroidchart = 'v3.1.0'
+versions.room = '2.3.0'
+versions.rxjava = '3.0.0'
+
+ext.versions = versions
+
+

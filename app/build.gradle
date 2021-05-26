@@ -1,0 +1,75 @@
+plugins {
+    id 'com.android.application'
+    id 'dagger.hilt.android.plugin'
+}
+
+android {
+    compileSdkVersion build_versions.compile_sdk
+
+    defaultConfig {
+        applicationId "com.orbitsoft.cryptocurrencyrates"
+        minSdkVersion build_versions.min_sdk
+        targetSdkVersion build_versions.target_sdk
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation "androidx.appcompat:appcompat:$versions.androidx_appcomapt"
+    implementation "com.google.android.material:material:$versions.material"
+
+    implementation "com.google.dagger:hilt-android:$versions.hilt"
+    annotationProcessor "com.google.dagger:hilt-compiler:$versions.hilt"
+
+    implementation "io.reactivex.rxjava3:rxandroid:$versions.rxjava"
+    implementation "io.reactivex.rxjava3:rxjava:$versions.rxjava"
+
+    implementation "androidx.paging:paging-runtime:$versions.paging"
+    implementation "androidx.paging:paging-rxjava3:$versions.paging"
+
+    implementation "com.squareup.retrofit2:retrofit:$versions.retrofit"
+    implementation "com.squareup.retrofit2:adapter-rxjava3:$versions.retrofit"
+    implementation "com.squareup.retrofit2:converter-moshi:$versions.retrofit"
+
+    // define a BOM and its version
+    implementation(platform("com.squareup.okhttp3:okhttp-bom:$versions.okhttp"))
+
+    // define any required OkHttp artifacts without version
+    implementation("com.squareup.okhttp3:okhttp")
+    implementation("com.squareup.okhttp3:logging-interceptor")
+
+    implementation "com.github.bumptech.glide:glide:$versions.glide"
+    annotationProcessor "com.github.bumptech.glide:compiler:$versions.glide"
+
+    implementation "com.caverock:androidsvg-aar:$versions.androidsvg"
+
+    implementation "com.facebook.shimmer:shimmer:$versions.shimmer"
+
+    implementation "com.github.philjay:mpandroidchart:$versions.mpandroidchart"
+
+    implementation "androidx.room:room-runtime:$versions.room"
+    annotationProcessor "androidx.room:room-compiler:$versions.room"
+    implementation "androidx.room:room-rxjava3:$versions.room"
+
+    debugImplementation "com.squareup.leakcanary:leakcanary-android:$versions.leakcanary"
+
+}

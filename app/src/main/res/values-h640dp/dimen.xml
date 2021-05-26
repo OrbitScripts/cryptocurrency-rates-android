@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="header_text" type="dimen">14sp</item>
+    <item name="row_logo_size" type="dimen">32dp</item>
+    <item name="row_loading_progress_size" type="dimen">24dp</item>
+    <item name="row_main_text" type="dimen">16sp</item>
+    <item name="row_secondary_text" type="dimen">14sp</item>
+    <item name="state_text" type="dimen">14sp</item>
+    <item name="empty_state_text" type="dimen">16sp</item>
+</resources>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:padding="8dp">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/header_cryptocurrency"
+                style="@style/Theme.CryptocurrencyRates.Header.Item"
+                android:enabled="false"
+                android:text="@string/header_cryptocurrency"
+                app:icon="@drawable/ic_arrow_drop_down" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/header_price"
+                style="@style/Theme.CryptocurrencyRates.Header.Item"
+                android:text="@string/header_price"
+                app:icon="@drawable/ic_arrow_drop_down" />
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.25">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/header_24h"
+                style="@style/Theme.CryptocurrencyRates.Header.Item"
+                android:layout_gravity="end"
+                android:text="@string/header_24h"
+                app:icon="@drawable/ic_arrow_drop_down" />
+        </FrameLayout>
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/row_divider" />
+</androidx.appcompat.widget.LinearLayoutCompat>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.facebook.shimmer.ShimmerFrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shimmer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/Theme.CryptocurrencyRates.Row.MainText"
+                android:layout_width="@dimen/row_number_width"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/shimmer_rounded_placeholder" />
+
+            <FrameLayout
+                android:layout_width="@dimen/row_logo_size"
+                android:layout_height="@dimen/row_logo_size"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="8dp"
+                android:background="@drawable/shimmer_circle" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:orientation="vertical"
+                android:paddingEnd="8dp">
+
+                <TextView
+                    style="@style/Theme.CryptocurrencyRates.Row.MainText"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/shimmer_rounded_placeholder" />
+
+                <TextView
+                    android:id="@+id/symbol"
+                    style="@style/Theme.CryptocurrencyRates.Row.SecondaryText"
+                    android:layout_width="24dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="1dp"
+                    android:background="@drawable/shimmer_rounded_placeholder" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.25"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/price"
+                style="@style/Theme.CryptocurrencyRates.Row.MainText"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shimmer_rounded_placeholder" />
+
+            <TextView
+                android:id="@+id/market_cap"
+                style="@style/Theme.CryptocurrencyRates.Row.SecondaryText"
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/shimmer_rounded_placeholder" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="end"
+            android:layout_weight="0.25"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <TextView
+                style="@style/Theme.CryptocurrencyRates.Row.MainText"
+                android:layout_width="24dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/shimmer_rounded_placeholder" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/row_chart_height"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="1dp"
+                android:background="@drawable/shimmer_rounded_placeholder" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</com.facebook.shimmer.ShimmerFrameLayout>

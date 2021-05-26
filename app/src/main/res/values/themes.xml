@@ -1,0 +1,56 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.CryptocurrencyRates" parent="Theme.MaterialComponents.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">@color/bg</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowBackground">@color/bg</item>
+    </style>
+
+    <style name="Theme.CryptocurrencyRates.Header.Item" parent="Widget.MaterialComponents.Button.TextButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/header_text</item>
+        <item name="android:textSize">@dimen/header_text</item>
+        <item name="android:insetTop">0dp</item>
+        <item name="android:insetBottom">0dp</item>
+        <item name="android:lines">1</item>
+        <item name="android:minHeight">0dp</item>
+        <item name="android:minWidth">0dp</item>
+        <item name="android:padding">0dp</item>
+        <item name="android:textStyle">normal</item>
+        <item name="iconGravity">textEnd</item>
+        <item name="iconTint">@color/header_text</item>
+        <item name="iconPadding">0dp</item>
+    </style>
+
+    <style name="Theme.CryptocurrencyRates.Row.MainText" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/row_main_text</item>
+        <item name="android:textSize">@dimen/row_main_text</item>
+    </style>
+
+    <style name="Theme.CryptocurrencyRates.Row.SecondaryText" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/row_secondary_text</item>
+        <item name="android:textSize">@dimen/row_secondary_text</item>
+    </style>
+
+    <style name="Theme.CryptocurrencyRates.StateRow.Text" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/row_state_text</item>
+        <item name="android:textSize">@dimen/state_text</item>
+    </style>
+
+    <style name="Theme.CryptocurrencyRates.EmptyStateRow.Text" parent="Widget.MaterialComponents.TextView">
+        <item name="android:textColor">@color/empty_state_text</item>
+        <item name="android:textSize">@dimen/empty_state_text</item>
+    </style>
+
+
+</resources>
